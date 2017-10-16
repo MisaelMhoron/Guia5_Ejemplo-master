@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ejercicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.dev4u.hv.guia5_ejemplo.EjercicioActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cinta"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp" />
+
+    <Button
+        android:id="@+id/IZQ"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/boton"
+        android:text="IZQ"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/centro"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/IZQ"
+        android:layout_alignTop="@+id/IZQ"
+
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/boton"
+        android:text="CENTRO" />
+
+    <Button
+        android:id="@+id/der"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/centro"
+        android:layout_alignTop="@+id/centro"
+        android:layout_toEndOf="@+id/centro"
+        android:layout_toRightOf="@+id/centro"
+        android:background="@drawable/boton"
+        android:text="DER" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="51dp"
+
+        app:srcCompat="@drawable/corona"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/IZQ"
+        android:layout_alignEnd="@+id/IZQ" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/corona" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/corona"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+
+</RelativeLayout>
